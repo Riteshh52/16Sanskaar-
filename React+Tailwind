@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>Sanskaar</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function App() {
+            return (
+                <div>
+                    <header className="bg-pink-700 text-white p-4 flex justify-between items-center">
+                        <div className="text-sm">India's Favourite Wedding Planning Platform</div>
+                        <div>
+                            <select className="text-black p-1">
+                                <option>All Cities</option>
+                                {/* Add more options as needed */}
+                            </select>
+                        </div>
+                    </header>
+                    <nav className="bg-pink-600 text-white p-4 flex justify-between items-center">
+                        <div className="text-2xl font-bold">16 Sanskaar</div>
+                        <div className="flex space-x-4">
+                            <a href="#" className="hover:underline">Venues</a>
+                            <a href="#" className="hover:underline">Vendors</a>
+                            <a href="#" className="hover:underline">Photos</a>
+                            <a href="#" className="hover:underline">Real Weddings</a>
+                            <a href="#" className="hover:underline">Blog</a>
+                            <a href="#" className="hover:underline">Shop</a>
+                            <a href="#" className="hover:underline">E-Invites</a>
+                        </div>
+                        <div className="flex space-x-4">
+                            <a href="#" className="hover:underline">Write A Review</a>
+                            <a href="#" className="hover:underline">Download App</a>
+                            <button className="bg-pink-800 px-4 py-2 rounded">Log In</button>
+                        </div>
+                    </nav>
+                    <div className="relative">
+                        <img src="https://placehold.co/1200x400" alt="Bride hugging family members during a wedding ceremony" className="w-full h-96 object-cover" />
+                        <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4 flex justify-center items-center">
+                            <div className="bg-white p-4 rounded shadow-lg flex space-x-4">
+                                <select className="p-2 border border-gray-300 rounded">
+                                    <option>Select vendor type</option>
+                                    {/* Add more options as needed */}
+                                </select>
+                                <select className="p-2 border border-gray-300 rounded">
+                                    <option>Select city</option>
+                                    {/* Add more options as needed */}
+                                </select>
+                                <button className="bg-pink-600 text-white px-4 py-2 rounded">Get Started</button>
+                            </div>
+                        </div>
+                    </div>
+                    <footer className="bg-gray-800 text-white p-4 text-center">
+                        Popular Searches: Wedding Photographers in India | Bridal Makeup Artists in India | Wedding Cards in India | Wedding Venues in India
+                    </footer>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
