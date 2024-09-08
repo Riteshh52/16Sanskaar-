@@ -1,0 +1,449 @@
+//header >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<html>
+<head>
+    <title>16Sanskaar</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function App() {
+            return (
+                <div>
+                    <header className="bg-pink-700 text-white p-4 flex justify-between items-center shadow-lg">
+                        <div className="flex items-center">
+                            <span className="text-2xl font-bold">16 sanskaar</span>
+                        </div>
+                        <div className="flex items-center space-x-4">
+                            <span>India's Favourite Wedding Planning Platform</span>
+                            <select className="bg-white text-black p-2 rounded transition duration-300 ease-in-out hover:bg-gray-200">
+                                <option>All Cities</option>
+                            </select>
+                        </div>
+                        <div className="flex items-center space-x-4">
+                            <a href="#" className="text-white transition duration-300 ease-in-out hover:text-gray-300">Write A Review</a>
+                            <a href="#" className="text-white transition duration-300 ease-in-out hover:text-gray-300">Download App</a>
+                            <button className="bg-pink-900 p-2 rounded transition duration-300 ease-in-out hover:bg-pink-800">Log In</button>
+                        </div>
+                    </header>
+                    <nav className="bg-pink-500 text-white p-4 flex justify-center space-x-8 shadow-md">
+                        <a href="#" className="hover:underline transition duration-300 ease-in-out">Venues</a>
+                        <a href="#" className="hover:underline transition duration-300 ease-in-out">Vendors</a>
+                        <a href="#" className="hover:underline transition duration-300 ease-in-out">Photos</a>
+                        <a href="#" className="hover:underline transition duration-300 ease-in-out">Real Weddings</a>
+                        <a href="#" className="hover:underline transition duration-300 ease-in-out">Blog</a>
+                        <a href="#" className="hover:underline transition duration-300 ease-in-out">Shop</a>
+                        <a href="#" className="hover:underline transition duration-300 ease-in-out">E-Invites</a>
+                    </nav>
+                    <div className="relative">
+                        <img src="https://placehold.co/1500x500" alt="Wedding scene with people in traditional attire" className="w-full h-96 object-cover"/>
+                        <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4 flex justify-center space-x-4">
+                            <select className="bg-white text-black p-2 rounded transition duration-300 ease-in-out hover:bg-gray-200">
+                                <option>Select vendor type</option>
+                            </select>
+                            <select className="bg-white text-black p-2 rounded transition duration-300 ease-in-out hover:bg-gray-200">
+                                <option>Select city</option>
+                            </select>
+                            <button className="bg-pink-700 text-white p-2 rounded transition duration-300 ease-in-out hover:bg-pink-600">Get Started</button>
+                        </div>
+                    </div>
+                    <footer className="bg-black text-white p-4 text-center shadow-inner">
+                        Popular Searches: Wedding Photographers in India | Bridal Makeup Artists in India | Wedding Cards in India | Wedding Venues in India
+                    </footer>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
+//main>>>>>>>>>>>>>>>>>>>>>>>
+<html>
+<head>
+    <title>Wedding Stories</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+</head>
+<body class="bg-gray-100">
+    <div id="root"></div>
+    <script type="text/babel">
+        const App = () => {
+            return (
+                <div className="p-8">
+                    <h1 className="text-2xl font-semibold mb-6">Real Wedding Stories.</h1>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                        <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="https://placehold.co/600x400" alt="A couple sitting in a garden" className="w-full h-48 object-cover"/>
+                            <div className="p-4">
+                                <h2 className="text-lg font-semibold">Aish and Sahil</h2>
+                                <p className="text-gray-600">A Pink & White Picture-Perfect Tuscany Wedding</p>
+                                <p className="text-gray-400 mt-2">04 September 2024</p>
+                            </div>
+                        </div>
+                        <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="https://placehold.co/600x400" alt="A couple in traditional Sikh wedding attire" className="w-full h-48 object-cover"/>
+                            <div className="p-4">
+                                <h2 className="text-lg font-semibold">Inayat and Jasdeep</h2>
+                                <p className="text-gray-600">This Sikh Wedding in Jim Corbett Was The Perfect Blend of Tradition & Modern Elegance</p>
+                                <p className="text-gray-400 mt-2">29 October 2023</p>
+                            </div>
+                        </div>
+                        <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="https://placehold.co/600x400" alt="A couple in traditional Indian wedding attire" className="w-full h-48 object-cover"/>
+                            <div className="p-4">
+                                <h2 className="text-lg font-semibold">Kulvin and Dilip</h2>
+                                <p className="text-gray-600">Destination Wedding in Vietnam With Out-Of-The-Box Themed Events</p>
+                                <p className="text-gray-400 mt-2">04 February 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 className="text-2xl font-semibold mb-6">Gallery to Look for.</h1>
+                    <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+                        <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="https://placehold.co/600x400" alt="Bridal Lehenga" className="w-full h-48 object-cover"/>
+                            <div className="p-4 text-center">
+                                <p className="text-gray-600">Bridal Lehenga</p>
+                            </div>
+                        </div>
+                        <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="https://placehold.co/600x400" alt="Outfits" className="w-full h-48 object-cover"/>
+                            <div className="p-4 text-center">
+                                <p className="text-gray-600">Outfits</p>
+                            </div>
+                        </div>
+                        <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="https://placehold.co/600x400" alt="Blouse Designs" className="w-full h-48 object-cover"/>
+                            <div className="p-4 text-center">
+                                <p className="text-gray-600">Blouse Designs</p>
+                            </div>
+                        </div>
+                        <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="https://placehold.co/600x400" alt="Wedding Sarees" className="w-full h-48 object-cover"/>
+                            <div className="p-4 text-center">
+                                <p className="text-gray-600">Wedding Sarees</p>
+                            </div>
+                        </div>
+                        <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="https://placehold.co/600x400" alt="Mehndi Designs" className="w-full h-48 object-cover"/>
+                            <div className="p-4 text-center">
+                                <p className="text-gray-600">Mehndi Designs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
+///2nd last footer>>>>>>>>>>>>>>>>>>.
+<html>
+<head>
+    <title>Wedding Planning</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body className="bg-gray-50">
+    <div id="root"></div>
+    <script type="text/babel">
+        const App = () => {
+            return (
+                <div className="p-8">
+                    <h1 className="text-3xl font-bold mb-2 text-gray-800">Enjoy planning your wedding</h1>
+                    <p className="text-gray-600 mb-8">Start planning your wedding with us, it's free</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="border p-6 rounded-lg bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <h2 className="text-xl font-bold mb-2 text-gray-800">Wedding venues</h2>
+                            <p className="text-gray-600 mb-4">Photos, reviews, and so much more. get in touch from here</p>
+                            <a href="#" className="text-red-500 hover:text-red-700 transition-colors duration-300">Explore venues</a>
+                            <img src="https://placehold.co/300x200" alt="A couple standing in a decorated wedding venue" className="mt-4 rounded-lg"/>
+                        </div>
+                        <div className="border p-6 rounded-lg bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <h2 className="text-xl font-bold mb-2 text-gray-800">Vendors</h2>
+                            <p className="text-gray-600 mb-4">Find the top-rated wedding vendors near you in every category.</p>
+                            <a href="#" className="text-red-500 hover:text-red-700 transition-colors duration-300">Start your search</a>
+                            <img src="https://placehold.co/300x200" alt="A beautifully set table at a wedding venue" className="mt-4 rounded-lg"/>
+                        </div>
+                        <div className="border p-6 rounded-lg bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <h2 className="text-xl font-bold mb-2 text-gray-800">Your free wedding website</h2>
+                            <p className="text-gray-600 mb-4">Share your wedding details - and your love story - with a customisable website.</p>
+                            <a href="#" className="text-red-500 hover:text-red-700 transition-colors duration-300">Personalise your free website</a>
+                            <img src="https://placehold.co/100x100" alt="A wedding website mockup" className="mt-4"/>
+                        </div>
+                        <div className="border p-6 rounded-lg bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <h2 className="text-xl font-bold mb-2 text-gray-800">Infinite inspiration</h2>
+                            <p className="text-gray-600 mb-4">All the freshest wedding inspiration, trends and ideas in one place.</p>
+                            <a href="#" className="text-red-500 hover:text-red-700 transition-colors duration-300">Get inspired here</a>
+                            <img src="https://placehold.co/300x200" alt="A collection of wedding inspiration images" className="mt-4 rounded-lg"/>
+                        </div>
+                        <div className="border p-6 rounded-lg bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <h2 className="text-xl font-bold mb-2 text-gray-800">Planning tools</h2>
+                            <p className="text-gray-600 mb-4">Custom planning tools to manage your checklist, budget, guests and vendors.</p>
+                            <a href="#" className="text-red-500 hover:text-red-700 transition-colors duration-300">Discover our tools</a>
+                            <img src="https://placehold.co/100x100" alt="A planning tools icon" className="mt-4"/>
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
+//footer>>>>>>>>>>>>>>>>>>>
+<html>
+<head>
+    <title>16 Sanskaar</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        .text-pink {
+            color: #ff4081;
+        }
+        .bg-dark {
+            background-color: #1a1a1a;
+        }
+        .bg-pink {
+            background-color: #ff4081;
+        }
+        .border-pink {
+            border-color: #ff4081;
+        }
+        .hover-effect:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="p-8">
+        <div class="text-center mb-8">
+            <p class="text-lg text-pink">
+                Plan your wedding with Us
+            </p>
+            <p class="text-sm text-gray-400">
+                16 Sanskaar is an Indian Wedding Planning Website and app where you can find the best wedding vendors, with prices and reviews at the click of a button. Whether you are looking to hire wedding planners in India, or looking for the top photographers, or just some ideas and inspiration for your wedding, 16 Sanskaar can help you solve your wedding planning woes through its unique features. With a checklist, detailed vendor list, inspiration gallery and blog - you won't need to spend hours planning a wedding anymore.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-lg mb-4">
+                    Contact us to get best deals
+                </h3>
+                <p class="text-sm">
+                    For Vendors
+                </p>
+                <p class="text-sm text-gray-400">
+                    vendors@wedmegood.com
+                </p>
+                <p class="text-sm text-gray-400">
+                    0124-6812346
+                </p>
+                <p class="text-sm mt-4">
+                    For Users
+                </p>
+                <p class="text-sm text-gray-400">
+                    info@16 Sanskaar.com
+                </p>
+                <p class="text-sm text-gray-400">
+                    0124-6812345
+                </p>
+                <p class="text-sm mt-4">
+                    Registered Address
+                </p>
+                <p class="text-sm text-gray-400">
+                    Second Floor, Ocus Technopolis, Sector 54 Golf Course Road, Gurgaon, Haryana, India, 122002
+                </p>
+            </div>
+            <div>
+                <h3 class="text-lg mb-4">
+                    Follow us on.
+                </h3>
+                <ul class="space-y-2">
+                    <li class="hover-effect">
+                        <i class="fab fa-facebook"></i> Facebook
+                    </li>
+                    <li class="hover-effect">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </li>
+                    <li class="hover-effect">
+                        <i class="fab fa-pinterest"></i> Pinterest
+                    </li>
+                    <li class="hover-effect">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </li>
+                    <li class="hover-effect">
+                        <i class="fab fa-youtube"></i> Youtube
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg mb-4">
+                    Get The 16 Sanskaar App
+                </h3>
+                <div class="flex space-x-4">
+                    <img class="hover-effect" alt="Download on the App Store" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-rkiJVc9hyyZo7VjIG1aVWiZS.png?st=2024-09-07T15%3A42%3A17Z&amp;se=2024-09-07T17%3A42%3A17Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-06T21%3A35%3A23Z&amp;ske=2024-09-07T21%3A35%3A23Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=jRTGFlc4%2BL%2BRY%2BApibC1sfTltHPwEQRVaErxCmdyGWs%3D" width="150"/>
+                    <img class="hover-effect" alt="Get it on Google Play" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-LfcPIelVdRMIqtDt6cX7Pk7i.png?st=2024-09-07T15%3A42%3A17Z&amp;se=2024-09-07T17%3A42%3A17Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-06T23%3A07%3A08Z&amp;ske=2024-09-07T23%3A07%3A08Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=BXfaDpobaiGBVVNYd8STRJl95wF38TbFmlcr1PnjHcM%3D" width="150"/>
+                </div>
+            </div>
+        </div>
+        <div class="mb-8">
+            <h3 class="text-lg mb-4">
+                Get Latest Blog Alerts
+            </h3>
+            <div class="flex space-x-4 mb-4">
+                <input class="p-2 border border-gray-400 rounded w-full focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="Email*" type="email"/>
+                <button class="bg-pink text-white p-2 rounded hover:bg-pink-600 transition duration-300">
+                    Submit
+                </button>
+            </div>
+            <div class="flex space-x-4">
+                <button class="bg-pink text-white p-2 rounded w-full hover:bg-pink-600 transition duration-300">
+                    Submit Wedding
+                </button>
+                <button class="border border-pink text-pink p-2 rounded w-full hover:bg-pink-600 hover:text-white transition duration-300">
+                    Register as a Vendor
+                </button>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-lg mb-4">
+                    Start Planning
+                </h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li class="hover:text-white transition duration-300">
+                        Search By Vendor
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Search By City
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Download Our App
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Top Rated Vendors
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Destination Wedding
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg mb-4">
+                    Wedding Ideas
+                </h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li class="hover:text-white transition duration-300">
+                        Wedding Blog
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Wedding Inspiration Gallery
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Real Wedding
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Submit Wedding
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg mb-4">
+                    Photo Gallery
+                </h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li class="hover:text-white transition duration-300">
+                        Bridal Wear
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Wedding Jewellery
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Bridal Makeup & Hair
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Wedding Decor
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Wedding Photography
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Groom Wear
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg mb-4">
+                    Home
+                </h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li class="hover:text-white transition duration-300">
+                        About WedMeGood
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Careers
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Contact Us
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Site Map
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Terms & Conditions
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Privacy Policy
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Wedding Invitation Maker
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Wedding Card Designs
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Save the Date Templates
+                    </li>
+                    <li class="hover:text-white transition duration-300">
+                        Invitation Video Templates
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
